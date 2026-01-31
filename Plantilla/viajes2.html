@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agencia de viajes</title>
+  <title>ViajesArousa - Viajes-2</title>
 
   <!-- Bootstrap CSS y JS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,39 +18,54 @@
 
 <body>
   <!-- MENÚ -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container d-flex align-items-center justify-content-between">
-      <a class="navbar-brand fw-bold fs-4" href="AgenciaViajes.html">Agencia de viajes</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="AgenciaViajes.html">
+      <span class="material-icons me-2">public</span> ViajesArousa
+    </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
-          <li class="nav-item"><a class="nav-link active" href="viajes1.html">Viajes</a></li>
-          <li class="nav-item"><a class="nav-link" href="postales.html">Postales</a></li>
-          <li class="nav-item"><a class="nav-link" href="flora-fauna.html">Naturaleza</a></li>
-          <!-- Botón para móvil -->
-          <li class="nav-item d-lg-none mt-2">
-            <a href="#" class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalContacto">
-              Contactar
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Botón para escritorio -->
-      <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-block" data-bs-toggle="modal"
-        data-bs-target="#modalContacto">
-        Contactar
-      </a>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-cente active" href="viajes1.html">
+            <span class="material-icons me-1">flight</span> Viajes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="postales.html">
+            <span class="material-icons me-1">photo</span> Postales
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="flora-fauna.html">
+            <span class="material-icons me-1">nature</span> Naturaleza
+          </a>
+        </li>
+        <!-- Botón para móvil -->
+        <li class="nav-item d-lg-none mt-2">
+          <a href="#" class="btn btn-light w-100 d-flex align-items-center justify-content-center" data-bs-toggle="modal"
+            data-bs-target="#modalContacto">
+            <span class="material-icons me-1">mail</span> Contactar
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+
+    <!-- Botón para escritorio -->
+    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
+      data-bs-target="#modalContacto">
+      <span class="material-icons me-1">mail</span> Contactar
+    </a>
+  </div>
+</nav>
   <!-- Contenido principal -->
-  <main>
-    <div class="container mt-5">
+  <main >
+    <div class="container mt-5 ">
 
       <!-- Cards de viajes -->
       <div class="row g-4">
@@ -68,7 +83,9 @@
                   <p class="card-text">Explora la ciudad eterna y su historia milenaria.</p>
                   <div class="d-flex justify-content-between align-items-center mt-auto">
                     <small class="text-muted">Enero 2025</small>
-                    <a href="viaje1.html" class="btn btn-primary">Ver viaje</a>
+                   <a href="./lugaresViena.html" class="btn btn-primary d-flex align-items-center">
+                      <span class="material-icons me-1">arrow_forward</span> Ver viaje
+                    </a>
                   </div>
                 </div>
               </div>

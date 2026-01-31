@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViajesArousa - Naturaleza</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/generic.css">
+  <link rel="icon" type="image/png" href="./assets/img/icons8-mundo-16.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="AgenciaViajes.html">
+        <span class="material-icons me-2">public</span> ViajesArousa
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="viajes1.html">
+              <span class="material-icons me-1 ">flight</span> Viajes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="postales.html">
+              <span class="material-icons me-1">photo</span> Postales
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center active" href="flora-fauna.html">
+              <span class="material-icons me-1">nature</span> Naturaleza
+            </a>
+          </li>
+          <!-- Botón para móvil -->
+          <li class="nav-item d-lg-none mt-2">
+            <a href="#" class="btn btn-light w-100 d-flex align-items-center justify-content-center"
+              data-bs-toggle="modal" data-bs-target="#modalContacto">
+              <span class="material-icons me-1">mail</span> Contactar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Botón para escritorio -->
+      <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
+        data-bs-target="#modalContacto">
+        <span class="material-icons me-1">mail</span> Contactar
+      </a>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="container my-5">
+    <h1>Naturaleza</h1>
+    <div class="row g-4">
+      <!--Cards Naturaleza -->
+      <!-- Plantas -->
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-planta">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>Rosa</h5>
+            <i class="bi bi-flower1 ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/shannon-baldwin-Z33hpeePdyc-unsplash.jpg" class="card-img-bottom" alt="Rosa">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-planta">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>Girasol</h5>
+            <i class="bi bi-flower1 ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/todd-kent-kW1P8R-UoWI-unsplash.jpg" class="card-img-bottom" alt="Girasol">
+        </div>
+      </div>
+
+      <!-- TERRESTRES -->
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-terrestre">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>León</h5>
+            <i class="bi bi-bug ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/zdenek-machacek-UxHol6SwLyM-unsplash.jpg" class="card-img-bottom" alt="León">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-terrestre">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>Elefante</h5>
+            <i class="bi bi-bug ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/andrew-rice-xYO4F6HoxOQ-unsplash.jpg" class="card-img-bottom" alt="Elefante">
+        </div>
+      </div>
+
+      <!-- AVES -->
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-ave">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>Águila</h5>
+            <i class="bi bi-feather ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/richard-lee-ys4najRQRkA-unsplash.jpg" class="card-img-bottom" alt="Águila">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-ave">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>Colibri</h5>
+            <i class="bi bi-feather ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/james-wainscoat-hjmED1qivmc-unsplash.jpg" class="card-img-bottom" alt="Colibri">
+        </div>
+      </div>
+
+      <!-- MARINOS -->
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-marino">
+          <div class="card-header-custom  d-flex align-items-center p-2">
+            <h5>Delfín</h5>
+            <i class="bi bi-droplet ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/noaa-NsvzdXtvyio-unsplash.jpg" class="card-img-bottom" alt="Delfín">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100 card-marino">
+          <div class="card-header-custom d-flex align-items-center p-2">
+            <h5>Tiburón</h5>
+            <i class="bi bi-droplet ms-auto"></i>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/gerald-schombs-GBDkr3k96DE-unsplash.jpg" class="card-img-bottom" alt="Tiburón">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p>
+      Página creada por Alejandro Diéguez Suárez -
+      <a href="referencias.html" class="text-light text-decoration-underline">Referencias</a>
+    </p>
+  </footer>
+  
+  <!-- MODAL -->
+  <div class="modal fade" id="modalContacto" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input class="form-control mb-3" placeholder="Nombre" required>
+            <input class="form-control mb-3" placeholder="Correo" type="email" required>
+            <textarea class="form-control mb-3" placeholder="Mensaje" required></textarea>
+            <button class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,18 +1,103 @@
+@import 'fonts.css';
 
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/*=============================================
+=            Estilos generales            =
+=============================================*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 main {
-    flex: 1; 
+  flex: 1;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  color: #4caf50;
+}
+
+
+
+/*=============================================
+=            Estilos del menu            =
+=============================================*/
+
+.navbar {
+  background-color: #4caf50;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar .material-icons {
+  color: #ffffff;
+}
+
+.navbar .material-icons {
+  user-select: none;
+}
+
+.navbar .material-icons::selection {
+  background: transparent;
+  color: inherit;
+}
+
+a .material-icons {
+  color: white;
+}
+
+
+.navbar .btn .material-icons {
+  color: #2ca02c;
+}
+
+.navbar .nav-link.active .material-icons {
+  color: #000000;
+}
+
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #000000;
+}
+
+
+.btn-primary {
+  background-color: #2ca02c;
+  border-color: #2ca02c;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #218421;
 }
 
 
@@ -20,119 +105,187 @@ main {
    Pagina Principal
 ===================== */
 #carruselViajes {
-    width: 80vw;
-    margin: 0 auto;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 #carruselViajes .carousel-item {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Imágenes de cada slide */
-.carousel-img-1 { background-image: url('../img/lovre-paris.jpg'); }
-.carousel-img-2 { background-image: url('../img/Belvedere-Palace-Vienna-Austria.jpg'); }
-.carousel-img-3 { background-image: url('../img/fontana-ditrevi.jpg'); }
-
-.carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-align: center;
+.carousel-img-1 {
+  background-image: url('../img/lovre-paris.jpg');
 }
 
+.carousel-img-2 {
+  background-image: url('../img/Belvedere-Palace-Vienna-Austria.jpg');
+}
+
+.carousel-img-3 {
+  background-image: url('../img/fontana-ditrevi.jpg');
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0,0,0,0.5); 
-    border-radius: 50%;              
-    width: 50px;                      
-    height: 50px;                     
-    background-size: 50%;         
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 50%;
 }
 
 /* cards inicio */
 .viaje-card {
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-    cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  cursor: pointer;
 }
 
-.viaje1 { 
-    background: url('../img/arco-triunfo-paris.jpg') center/cover no-repeat; 
+.viaje1 {
+  background: url('../img/arco-triunfo-paris.jpg') center/cover no-repeat;
 }
-.viaje2 { 
-    background: url('../img/venecia-italia.jpg') center/cover no-repeat; 
+
+.viaje2 {
+  background: url('../img/venecia-italia.jpg') center/cover no-repeat;
 }
 
 .overlay-default {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.7);
-    text-align: center;
-    padding: 0.8rem 0;
-    transition: opacity 0.3s;
-    z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 0.8rem 0;
+  transition: opacity 0.3s;
+  z-index: 2;
 }
 
 /* Overlay al pasar el mouse */
 .overlay-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.85);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 3;
 }
 
 /* Efecto hover */
 .viaje-card:hover .overlay-hover {
-    opacity: 1;
+  opacity: 1;
 }
+
 .viaje-card:hover .overlay-default {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Texto y botón centrados */
 .overlay-hover h5 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .overlay-hover p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 
+/* =============================================
+   Cards en página Lugares
+============================================= */
+
+.card {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  background-color: #fdfdf9;
+}
+
+.card-header {
+  background-color: #4caf50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.card-header h5 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #ffffff;
+  
+}
+
+.card-header .material-icons {
+  color: #ffffff;
+ 
+}
+
+.card-header .text-muted {
+  color: #ffffff !important;
+
+}
+
+.material-icons {
+  color: #2ca02c;
+  
+}
+
+.img-lugar {
+  height: 260px;
+  object-fit: cover;
+}
+.card-body {
+  min-height: 200px;
+}
+
+.card-footer {
+  background-color: #19b1212d;
+  border-top: 1px solid #e0dfdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer .text-warning .material-icons {
+  color: #ffd700;
+}
 
 /*=============================================
 =            Pagina viajes            =
 =============================================*/
-
-/* cards viajes  */
 .viaje-img {
-  height: 200px;       
-  object-fit: cover;    
-  width: 100%;         
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
 }
 
 
@@ -140,9 +293,10 @@ main {
 /*=============================================
 =            Ventana Modal            =
 =============================================*/
-/* Ventana Modal*/
+
+
 .modal {
-    z-index: 2000;
+  z-index: 2000;
 }
 
 
@@ -174,10 +328,12 @@ main {
 .postal-front,
 .postal-back {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  border: 10px solid #ccc;
+  border: 10px solid #4caf50;
+  ;
   backface-visibility: hidden;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -191,19 +347,19 @@ main {
 .postal-front img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .postal-front h5 {
   position: absolute;
-  bottom: 0.75rem;       
-  left: 50%;             
-  transform: translateX(-50%); 
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
   color: white;
   font-size: 2rem;
 
- 
+
 }
 
 .postal-back {
@@ -270,24 +426,50 @@ main {
 
 
 .img-lugar {
-    height: 200px;
-    object-fit: cover;
+  height: 200px;
+  object-fit: cover;
 }
 
 
+/*=============================================
+=            Pagina Naturaleza            =
+=============================================*/
+.card-line {
+  height: 3px;
+  width: 100%;
+}
+
+/* Colores */
+.card-planta .card-line {
+  background-color: green
+}
+
+.card-terrestre .card-line {
+  background-color: yellow
+}
+
+.card-ave .card-line {
+  background-color: brown
+}
+
+.card-marino .card-line {
+  background-color: #0d6efd;
+}
 
 /* =====================
    Media Queries 
 ===================== */
 @media (max-width: 768px) {
-    #carruselViajes {
-        width: 100vw;
-    }
-    #carruselViajes .carousel-item {
-        height: 300px;
-    }
-    .carousel-caption {
-        font-size: 0.9rem;
-        padding: 0.3rem 0.6rem;
-    }
+  #carruselViajes {
+    width: 100vw;
+  }
+
+  #carruselViajes .carousel-item {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
 }

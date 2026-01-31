@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agencia de viajes</title>
+    <title>ViajesArousa - Roma</title>
 
     <!-- Bootstrap CSS y JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,36 +18,52 @@
 </head>
 
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a class="navbar-brand fw-bold fs-4" href="AgenciaViajes.html">Agencia de viajes</a>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="AgenciaViajes.html">
+      <span class="material-icons me-2">public</span> ViajesArousa
+    </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
-                    <li class="nav-item"><a class="nav-link" href="viajes1.html">Viajes</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="postales.html">Postales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="flora-fauna.html">Naturaleza</a></li>
-                    <!-- Botón para móvil -->
-                    <li class="nav-item d-lg-none mt-2">
-                        <a href="#" class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalContacto">
-                            Contactar
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Botón para escritorio -->
-            <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-block" data-bs-toggle="modal"
-                data-bs-target="#modalContacto">
-                Contactar
-            </a>
-        </div>
-    </nav>
-    <main class="container my-4">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="viajes1.html">
+            <span class="material-icons me-1 ">flight</span> Viajes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="postales.html">
+            <span class="material-icons me-1">photo</span> Postales
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="flora-fauna.html">
+            <span class="material-icons me-1">nature</span> Naturaleza
+          </a>
+        </li>
+        <!-- Botón para móvil -->
+        <li class="nav-item d-lg-none mt-2">
+          <a href="#" class="btn btn-light w-100 d-flex align-items-center justify-content-center" data-bs-toggle="modal"
+            data-bs-target="#modalContacto">
+            <span class="material-icons me-1">mail</span> Contactar
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Botón para escritorio -->
+    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
+      data-bs-target="#modalContacto">
+      <span class="material-icons me-1">mail</span> Contactar
+    </a>
+  </div>
+</nav>
+    <main class="container">
 
         
         <h1>Lugares de Roma</h1>
@@ -61,7 +77,10 @@
                     <span class="material-icons">explore</span>
                     <h5 class="mb-0">Roma</h5>
                 </div>
-                <span class="text-muted">14/08/2025</span>
+                 <div class="d-flex align-items-center gap-2">
+                     <span class="text-muted">20/06/2025</span>
+                     <span class="material-icons">calendar_month</span>
+                </div>
             </div>
 
             <!-- Fotos -->
@@ -74,11 +93,15 @@
                 </div>
             </div>
             <!-- Descripción -->
-            <div class="card-body" style="min-height: 200px;">
+            <div class="card-body">
                 <p class="card-text">
-                    La Torre Eiffel es uno de los monumentos más emblemáticos del mundo.
-                    Fue construida en 1889 y ofrece unas vistas espectaculares de París.
-                    Ideal para visitar tanto de día como de noche.
+                  Roma, conocida como “la Ciudad Eterna”, es un destino lleno de historia, arte y cultura. Sus calles y plazas están impregnadas de siglos de civilización, 
+                  desde el Coliseo y el Foro Romano hasta la Fontana di Trevi y la Plaza de España. Cada rincón ofrece un viaje en el tiempo, combinando la grandeza del 
+                  Imperio Romano con la riqueza del Renacimiento y el Barroco.
+                </p>
+                <p class="card-text">
+                  Roma no solo es un museo al aire libre, sino también un lugar vibrante donde la gastronomía, la vida cotidiana y la tradición se entrelazan, 
+                  ofreciendo una experiencia inolvidable para cualquier viajero.
                 </p>
             </div>
 
@@ -90,7 +113,7 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
-                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">star</span>
                 </div>
 
                 <!-- Dirección -->
@@ -110,7 +133,10 @@
                     <span class="material-icons">architecture</span>
                     <h5 class="mb-0">Coliseum</h5>
                 </div>
-                <span class="text-muted">12/08/2025</span>
+                 <div class="d-flex align-items-center gap-2">
+                     <span class="text-muted">20/06/2025</span>
+                     <span class="material-icons">calendar_month</span>
+                </div>
             </div>
 
             <!-- Fotos -->
@@ -124,11 +150,14 @@
             </div>
 
             <!-- Descripción -->
-            <div class="card-body" style="min-height: 200px;">
+            <div class="card-body" >
                 <p class="card-text">
-                    La Torre Eiffel es uno de los monumentos más emblemáticos del mundo.
-                    Fue construida en 1889 y ofrece unas vistas espectaculares de París.
-                    Ideal para visitar tanto de día como de noche.
+                    El Coliseo es el anfiteatro más grande del mundo y uno de los símbolos más emblemáticos de Roma. Construido en el siglo I d.C., 
+                    fue escenario de gladiadores, espectáculos públicos y representaciones teatrales que asombraban a miles de espectadores.
+                </p>
+                <p class="card-text">
+                   Su arquitectura impresionante y su historia fascinante lo convierten en una visita imprescindible para entender la grandeza del Imperio Romano. 
+                   Hoy, el Coliseo no solo es un monumento histórico, sino también un testimonio del ingenio y la cultura de la antigua Roma.
                 </p>
             </div>
 
@@ -140,12 +169,12 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
-                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">star</span>
                 </div>
 
                 <!-- Dirección -->
                 <span class="text-muted">
-                    París, Francia
+                    Piazza del Colosseo, 1, 00184 Roma RM, Italia
                 </span>
             </div>
 
@@ -156,27 +185,32 @@
             <!-- Cabecera -->
             <div class="card-header d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center gap-2">
-                    <span class="material-icons">museum</span>
-                    <h5 class="mb-0">Museo del Louvre</h5>
+                    <span class="material-icons">restaurant</span>
+                    <h5 class="mb-0">Trattoria Settimio</h5>
                 </div>
-                <span class="text-muted">14/08/2025</span>
+                 <div class="d-flex align-items-center gap-2">
+                     <span class="text-muted">21/06/2025</span>
+                     <span class="material-icons">calendar_month</span>
+                </div>
             </div>
 
             <!-- Fotos -->
             <div class="row g-0">
                 <div class="col-md-6">
-                    <img src="./assets/img/lovre-paris.jpg" class="img-lugar w-100" alt="Foto 1">
+                    <img src="./assets/img/marco-calignano-4ZtaOE_No54-unsplash.jpg" class="img-lugar w-100" alt="Foto 1">
                 </div>
                 <div class="col-md-6">
-                    <img src="./assets/img/jean-carlo-emer-RwF-IaBrz5g-unsplash.jpg" class="img-lugar w-100" alt="Foto 2">
+                    <img src="./assets/img/chris-weiher-8sdRfiPf4Qo-unsplash.jpg" class="img-lugar w-100" alt="Foto 2">
                 </div>
             </div>
             <!-- Descripción -->
             <div class="card-body">
                 <p class="card-text">
-                    La Torre Eiffel es uno de los monumentos más emblemáticos del mundo.
-                    Fue construida en 1889 y ofrece unas vistas espectaculares de París.
-                    Ideal para visitar tanto de día como de noche.
+                   La Trattoria Settimio es un clásico restaurante italiano ubicado en el centro histórico de Roma, especializado en la auténtica cocina romana tradicional.
+                </p>
+                 <p class="card-text">
+                  Fundado en 1932, este lugar ofrece una experiencia culinaria genuina con platos típicos como spaghetti alla carbonara, amatriciana, cacio e pepe, gnocchi al 
+                  sugo, bollito di manzo y polpette ai ferri, todos preparados con ingredientes locales frescos y recetas transmitidas de generación en generación.
                 </p>
             </div>
 
@@ -188,12 +222,12 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
-                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">star_half</span>
                 </div>
 
                 <!-- Dirección -->
                 <span class="text-muted">
-                    París, Francia
+                    Via del Pellegrino, 117, 00186 Roma RM, Italia
                 </span>
             </div>
 
@@ -207,7 +241,10 @@
                     <span class="material-icons">church</span>
                     <h5 class="mb-0">Chiesa di Sant'Agnese</h5>
                 </div>
-                <span class="text-muted">13/08/2025</span>
+                 <div class="d-flex align-items-center gap-2">
+                     <span class="text-muted">21/06/2025</span>
+                     <span class="material-icons">calendar_month</span>
+                </div>
             </div>
 
             <!-- Fotos -->
@@ -216,15 +253,18 @@
                     <img src="./assets/img/nick-castelli-OY6O1gUheKI-unsplash.jpg" class="img-lugar w-100" alt="Foto 1">
                 </div>
                 <div class="col-md-6">
-                    <img src="./assets/img/francesco-alberti-QLE7iIYH7vA-unsplash.jpg" class="img-lugar w-100" alt="Foto 2">
+                    <img src="./assets/img/sten-ritterfeld-RGw1FT6l4kQ-unsplash.jpg" class="img-lugar w-100" alt="Foto 2">
                 </div>
             </div>
             <!-- Descripción -->
-            <div class="card-body" style="min-height: 200px;">
+            <div class="card-body">
                 <p class="card-text">
-                    La Torre Eiffel es uno de los monumentos más emblemáticos del mundo.
-                    Fue construida en 1889 y ofrece unas vistas espectaculares de París.
-                    Ideal para visitar tanto de día como de noche.
+                    La Chiesa di Sant’Agnese in Agone es una emblemática iglesia barroca situada en la Piazza Navona de Roma, dedicada a Santa Inés (Sant’Agnese), 
+                    una joven mártir cristiana del siglo III.
+                </p>
+                <p class="card-text">
+                    Su construcción comenzó en el siglo XVII y es obra de reconocidos arquitectos barrocos como Francesco Borromini, quien imprimió su estilo dinámico y elegante, 
+                    caracterizado por fachadas onduladas, columnas monumentales y una cúpula impresionante.
                 </p>
             </div>
 
@@ -235,13 +275,13 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
-                    <span class="material-icons">star</span>
+                    <span class="material-icons">star_half</span>
                     <span class="material-icons">star_border</span>
                 </div>
 
                 <!-- Dirección -->
                 <span class="text-muted">
-                    París, Francia
+                    Via di Santa Maria dell'Anima, 30/A, 00186 Roma RM, Italia
                 </span>
             </div>
 
