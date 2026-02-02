@@ -299,6 +299,10 @@ a .material-icons {
   z-index: 2000;
 }
 
+#mensaje {
+  height: 120px
+}
+
 
 /* =============================
    Pagina Postales
@@ -333,7 +337,6 @@ a .material-icons {
   width: 100%;
   height: 100%;
   border: 10px solid #4caf50;
-  ;
   backface-visibility: hidden;
   overflow: hidden;
   border-radius: 0.5rem;

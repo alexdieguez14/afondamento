@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ViajesArousa - Postales</title>
-
     <!-- Bootstrap CSS y JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous" />
@@ -17,52 +16,50 @@
 </head>
 
 <body>
-    <!-- MENÚ -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container d-flex align-items-center justify-content-between">
-    <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="AgenciaViajes.html">
-      <span class="material-icons me-2">public</span>ViajesArousa
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="viajes1.html">
-            <span class="material-icons me-1 ">flight</span> Viajes
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex align-items-center justify-content-between">
+          <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="AgenciaViajes.html">
+            <span class="material-icons me-2">public</span> ViajesArousa
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center active" href="postales.html">
-            <span class="material-icons me-1">photo</span> Postales
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="flora-fauna.html">
-            <span class="material-icons me-1">nature</span> Naturaleza
-          </a>
-        </li>
-        <!-- Botón para móvil -->
-        <li class="nav-item d-lg-none mt-2">
-          <a href="#" class="btn btn-light w-100 d-flex align-items-center justify-content-center" data-bs-toggle="modal"
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="viajes1.html">
+                  <span class="material-icons me-1 ">flight</span> Viajes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="postales.html">
+                  <span class="material-icons me-1">photo</span> Postales
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="flora-fauna.html">
+                  <span class="material-icons me-1">nature</span> Naturaleza
+                </a>
+              </li>
+              <!-- Botón para móvil -->
+              <li class="nav-item d-lg-none mt-2">
+                <a href="#" class="btn btn-light w-100 d-flex align-items-center justify-content-center" data-bs-toggle="modal"
+                  data-bs-target="#modalContacto">
+                  <span class="material-icons me-1">mail</span> Contactar
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Botón para escritorio -->
+          <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
             data-bs-target="#modalContacto">
             <span class="material-icons me-1">mail</span> Contactar
           </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Botón para escritorio -->
-    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
-      data-bs-target="#modalContacto">
-      <span class="material-icons me-1">mail</span> Contactar
-    </a>
-  </div>
-</nav>
+        </div>
+      </nav>
+    </header>
 
     <main>
         <!-- Postal-->
@@ -70,7 +67,7 @@
             <div class="postal-inner">
                 <!-- Delante -->
                 <div class="postal-front">
-                    <img src="./assets/img/cafe-france.jpg" alt="Postal frontal" />
+                    <img src="./assets/img/cafe-france.jpg" alt="Postal-Paris" />
                     <h5>París</h5>
                 </div>
                 <!-- Atras -->
@@ -102,7 +99,7 @@
             <div class="postal-inner">
                 <!-- Delante -->
                 <div class="postal-front">
-                    <img src="./assets/img/venecia-italia.jpg" alt="Postal frontal" />
+                    <img src="./assets/img/venecia-italia.jpg" alt="Postal-Venecia" />
                     <h5>Venecia</h5>
                 </div>
                 <!-- Atras -->
@@ -134,7 +131,7 @@
             <div class="postal-inner">
                 <!-- Delante -->
                 <div class="postal-front">
-                    <img src="./assets/img/niza-francia.jpg" alt="Postal frontal" />
+                    <img src="./assets/img/niza-francia.jpg" alt="Postal-Niza" />
                     <h5>Niza</h5>
                 </div>
                 <!-- Atras -->
@@ -191,8 +188,7 @@
                             <label for="correo">Correo electrónico</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="mensaje" placeholder="Mensaje" required minlength="10"
-                                style="height: 120px"></textarea>
+                            <textarea class="form-control" id="mensaje" placeholder="Mensaje" required minlength="10"></textarea>
                             <label for="mensaje">Mensaje</label>
                         </div>
                         <div class="text-center">
